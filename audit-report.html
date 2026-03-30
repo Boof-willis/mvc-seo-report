@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEO Audit Report — Mountain View Commons</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="top-nav">
+    <div class="nav-inner">
+      <img src="MVC Brand Guide/Logo/PNG/MVC-Logo_Wht_web.png" alt="Mountain View Commons" class="nav-logo">
+      <div class="nav-links">
+        <a href="audit-report.html" class="active">Audit Report</a>
+        <a href="action-plan.html">Action Plan</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <div>
+        <h1>Full SEO<br>Audit Report</h1>
+        <p class="subtitle">www.mtnviewcommonsut.com</p>
+        <p class="date">Report Generated: 2026.03.25</p>
+      </div>
+      <div class="hero-meta">
+        Doc Ref: <span>MVC-SEO-001</span><br>
+        Classification: <span>Internal</span><br>
+        Pages Crawled: <span>13</span><br>
+        Platform: <span>Squarespace</span><br>
+        Health Score: <span>34 / 100</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Executive Summary -->
+    <section class="card" id="executive-summary">
+      <h2>Executive Summary</h2>
+
+      <div class="score-banner">
+        <div class="score-ring" data-score="34">
+          <svg viewBox="0 0 120 120">
+            <circle cx="60" cy="60" r="52" class="score-bg"/>
+            <circle cx="60" cy="60" r="52" class="score-fg" style="stroke-dasharray: 326.7; stroke-dashoffset: 215.6;"/>
+          </svg>
+          <span class="score-value">34</span>
+          <span class="score-label">/ 100</span>
+        </div>
+        <div class="score-meta">
+          <table class="compact-table">
+            <tbody>
+              <tr><td>Business Type</td><td>Mixed-Use Real Estate Development</td></tr>
+              <tr><td>Pages Crawled</td><td>13 (full site)</td></tr>
+              <tr><td>Platform</td><td>Squarespace</td></tr>
+              <tr><td>Domain</td><td>mtnviewcommonsut.com</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="two-col">
+        <div>
+          <h3>Top 5 Critical Issues</h3>
+          <ol class="issue-list critical">
+            <li><strong>Zero meta descriptions</strong> across all 13 pages &mdash; massively hurts CTR in search results</li>
+            <li><strong>Duplicate title tags</strong> &mdash; 4 floorplan pages share the identical title</li>
+            <li><strong>No canonical tags</strong> on any page &mdash; risks duplicate content indexing</li>
+            <li><strong>33+ images missing alt text</strong> &mdash; accessibility violation and lost image SEO</li>
+            <li><strong>Social media links point to Squarespace defaults</strong> &mdash; no real social presence linked</li>
+          </ol>
+        </div>
+        <div>
+          <h3>Top 5 Quick Wins</h3>
+          <ol class="issue-list wins">
+            <li>Add unique meta descriptions to all 13 pages <span class="tag time">1-2 hrs</span></li>
+            <li>Fix duplicate title tags on floorplan pages <span class="tag time">30 min</span></li>
+            <li>Add alt text to all images, especially gallery <span class="tag time">1-2 hrs</span></li>
+            <li>Add FAQPage schema to the FAQ page <span class="tag time">30 min</span></li>
+            <li>Fix social media links to actual business profiles <span class="tag time">10 min</span></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical SEO -->
+    <section class="card" id="technical-seo">
+      <div class="section-header">
+        <h2>Technical SEO</h2>
+        <span class="badge score-low">38 / 100</span>
+      </div>
+
+      <h3>Crawlability</h3>
+      <table>
+        <thead><tr><th>Check</th><th>Status</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td>robots.txt</td><td><span class="status pass">Present</span></td><td>Hosted by Squarespace; blocks AI crawlers (ClaudeBot, GPTBot, etc.)</td></tr>
+          <tr><td>XML Sitemap</td><td><span class="status pass">Present</span></td><td>13 URLs listed at /sitemap.xml</td></tr>
+          <tr><td>Sitemap in robots.txt</td><td><span class="status pass">Yes</span></td><td>Referenced correctly</td></tr>
+          <tr><td>Internal linking</td><td><span class="status pass">Adequate</span></td><td>All pages reachable from navigation</td></tr>
+          <tr><td>Redirect chains</td><td><span class="status warn">Issue</span></td><td>/flex-use-real-estate 301 &rarr; /mixed-use-real-estate</td></tr>
+          <tr><td>Broken links</td><td><span class="status pass">Clear</span></td><td>&mdash;</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Indexability</h3>
+      <table>
+        <thead><tr><th>Check</th><th>Status</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td>Canonical tags</td><td><span class="status fail">Missing</span></td><td>No canonical tags on ANY page</td></tr>
+          <tr><td>Meta robots tags</td><td><span class="status fail">Missing</span></td><td>No robots meta tags found</td></tr>
+          <tr><td>Noindex pages</td><td><span class="status neutral">N/A</span></td><td>None detected</td></tr>
+          <tr><td>Duplicate content risk</td><td><span class="status fail">High</span></td><td>4 pages share identical title tag</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Security</h3>
+      <table>
+        <thead><tr><th>Check</th><th>Status</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td>HTTPS</td><td><span class="status pass">Active</span></td><td>SSL certificate active</td></tr>
+          <tr><td>Mixed content</td><td><span class="status pass">Clear</span></td><td>&mdash;</td></tr>
+          <tr><td>HSTS</td><td><span class="status neutral">Unknown</span></td><td>Squarespace-managed</td></tr>
+        </tbody>
+      </table>
+
+      <h3>URL Structure</h3>
+      <table>
+        <thead><tr><th>Check</th><th>Status</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td>Clean URLs</td><td><span class="status pass">Good</span></td><td>Descriptive, hyphenated slugs</td></tr>
+          <tr><td>URL depth</td><td><span class="status pass">Good</span></td><td>All pages 1 level deep</td></tr>
+          <tr><td>Trailing slashes</td><td><span class="status pass">Consistent</span></td><td>&mdash;</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Sitemap Issues</h3>
+      <table>
+        <thead><tr><th>Issue</th><th>Severity</th></tr></thead>
+        <tbody>
+          <tr><td>changefreq "daily" on all pages</td><td><span class="tag severity-med">Medium</span></td></tr>
+          <tr><td>/home listed instead of /</td><td><span class="tag severity-med">Medium</span></td></tr>
+          <tr><td>/flex-use-real-estate not in sitemap</td><td><span class="tag severity-low">Low</span></td></tr>
+          <tr><td>Priority values all 0.75 (except home at 1.0)</td><td><span class="tag severity-low">Low</span></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Content Quality -->
+    <section class="card" id="content-quality">
+      <div class="section-header">
+        <h2>Content Quality</h2>
+        <span class="badge score-low">30 / 100</span>
+      </div>
+
+      <h3>E-E-A-T Assessment</h3>
+      <table>
+        <thead><tr><th>Signal</th><th>Rating</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td>Experience</td><td><span class="status fail">Weak</span></td><td>No testimonials, case studies, or buyer stories</td></tr>
+          <tr><td>Expertise</td><td><span class="status warn">Moderate</span></td><td>Developer and builder info provided</td></tr>
+          <tr><td>Authoritativeness</td><td><span class="status fail">Weak</span></td><td>Christie's brand mentioned but not leveraged with schema</td></tr>
+          <tr><td>Trustworthiness</td><td><span class="status warn">Moderate</span></td><td>Contact info visible, physical address provided</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Page-by-Page Content Analysis</h3>
+      <table>
+        <thead><tr><th>Page</th><th>Words</th><th>Quality</th><th>Issues</th></tr></thead>
+        <tbody>
+          <tr><td>Homepage</td><td>~900</td><td><span class="status warn">Moderate</span></td><td>Typo: "Herber City" instead of "Heber City"</td></tr>
+          <tr><td>Mixed-Use Real Estate</td><td>~1,300</td><td><span class="status pass">Good</span></td><td>Best content page on site</td></tr>
+          <tr><td>The Hideout</td><td>~450</td><td><span class="status fail">Thin</span></td><td>Below 500-word threshold</td></tr>
+          <tr><td>The Frontier</td><td>~375</td><td><span class="status fail">Thin</span></td><td>Below 500-word threshold</td></tr>
+          <tr><td>The Mercantile</td><td>~450</td><td><span class="status fail">Thin</span></td><td>Below 500-word threshold</td></tr>
+          <tr><td>The Outlaw</td><td>~450</td><td><span class="status fail">Thin</span></td><td>Below 500-word threshold</td></tr>
+          <tr><td>Location</td><td>~1,300</td><td><span class="status pass">Good</span></td><td>Solid demographic data</td></tr>
+          <tr><td>FAQs</td><td>~850</td><td><span class="status warn">Moderate</span></td><td>Typo: "UNITES" should be "UNITS"</td></tr>
+          <tr><td>Contact</td><td>~300</td><td><span class="status fail">Thin</span></td><td>Minimal beyond form</td></tr>
+          <tr><td>Gallery</td><td>~100</td><td><span class="status fail">V. Thin</span></td><td>Almost no text content</td></tr>
+          <tr><td>Site Plan</td><td>~200</td><td><span class="status fail">V. Thin</span></td><td>Minimal text</td></tr>
+          <tr><td>Downloads</td><td>~375</td><td><span class="status fail">Thin</span></td><td>2023 budget doc is outdated</td></tr>
+          <tr><td>Privacy Policy</td><td>~800</td><td><span class="status pass">Adequate</span></td><td>Standard policy page</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout warn">
+        <strong>7 of 13 pages</strong> have thin content (under 500 words). Floorplan pages need expanded descriptions, features, specs, and use-case content.
+      </div>
+    </section>
+
+    <!-- On-Page SEO -->
+    <section class="card" id="on-page-seo">
+      <div class="section-header">
+        <h2>On-Page SEO</h2>
+        <span class="badge score-critical">22 / 100</span>
+      </div>
+
+      <h3>Title Tags</h3>
+      <table>
+        <thead><tr><th>Page</th><th>Title</th><th>Issues</th></tr></thead>
+        <tbody>
+          <tr><td>Homepage</td><td>Mixed-Use Property in Herber City Utah&hellip;</td><td><span class="status fail">Typo</span> "Herber" &rarr; "Heber"; missing brand</td></tr>
+          <tr><td>Mixed-Use Real Estate</td><td>Mixed-Use Property Uses &amp; Examples &mdash; Mountain View Commons</td><td><span class="status pass">Good</span></td></tr>
+          <tr><td>The Hideout</td><td>Site Plans &amp; Available Units &mdash; Mountain View Commons</td><td><span class="status fail">Duplicate</span></td></tr>
+          <tr><td>The Frontier</td><td>Site Plans &amp; Available Units &mdash; Mountain View Commons</td><td><span class="status fail">Duplicate</span></td></tr>
+          <tr><td>The Mercantile</td><td>Site Plans &amp; Available Units &mdash; Mountain View Commons</td><td><span class="status fail">Duplicate</span></td></tr>
+          <tr><td>The Outlaw</td><td>Site Plans &amp; Available Units &mdash; Mountain View Commons</td><td><span class="status fail">Duplicate</span></td></tr>
+          <tr><td>Location</td><td>Convenient Location in Heber City &mdash; Mountain View Commons</td><td><span class="status pass">Good</span></td></tr>
+          <tr><td>FAQs</td><td>FAQs about Mixed-Use Property &mdash; Mountain View Commons</td><td><span class="status pass">Good</span></td></tr>
+          <tr><td>Contact</td><td>Contact Us &mdash; Mountain View Commons</td><td><span class="status pass">Good</span></td></tr>
+          <tr><td>Gallery</td><td>Gallery &mdash; Mountain View Commons</td><td><span class="status pass">Good</span> but generic</td></tr>
+          <tr><td>Site Plan</td><td>Site Plans &amp; Available Units &mdash; Mountain View Commons</td><td><span class="status fail">Duplicate</span></td></tr>
+          <tr><td>Downloads</td><td>Document Downloads &mdash; Mountain View Commons</td><td><span class="status pass">Good</span></td></tr>
+          <tr><td>Privacy Policy</td><td>Privacy Policy &mdash; Mountain View Commons</td><td><span class="status pass">Good</span></td></tr>
+        </tbody>
+      </table>
+      <div class="callout critical">
+        <strong>5 pages share the exact same title tag.</strong> This is a critical SEO issue preventing proper indexing differentiation.
+      </div>
+
+      <h3>Meta Descriptions</h3>
+      <div class="callout critical">
+        <strong>No page on the entire site has a meta description.</strong> Google will auto-generate snippets, which are often suboptimal and reduce click-through rates.
+      </div>
+
+      <h3>Heading Structure</h3>
+      <table>
+        <thead><tr><th>Page</th><th>H1</th><th>Issues</th></tr></thead>
+        <tbody>
+          <tr><td>Homepage</td><td>MIXED-USE PROPERTY IN HEBER CITY, UTAH</td><td><span class="status pass">Good</span></td></tr>
+          <tr><td>Mixed-Use Real Estate</td><td>MIXED-USE PROPERTY FOR SALE</td><td><span class="status pass">Good</span></td></tr>
+          <tr><td>The Hideout</td><td>THE HIDEOUT MODEL</td><td><span class="status pass">Good</span></td></tr>
+          <tr><td>The Frontier</td><td>THE FRONTIER MODEL</td><td><span class="status pass">Good</span></td></tr>
+          <tr><td>The Mercantile</td><td>THE MERCANTILE MODEL</td><td><span class="status pass">Good</span></td></tr>
+          <tr><td>The Outlaw</td><td>THE OUTLAW MODEL</td><td><span class="status pass">Good</span></td></tr>
+          <tr><td>Location</td><td>HEBER CITY, UTAH</td><td><span class="status warn">Could include "Mixed-Use Property Location"</span></td></tr>
+          <tr><td>FAQs</td><td>Frequently Asked Questions</td><td><span class="status warn">Generic &mdash; add "Mountain View Commons"</span></td></tr>
+          <tr><td>Contact</td><td>CONTACT US</td><td><span class="status warn">Generic</span></td></tr>
+          <tr><td>Gallery</td><td>Image GALLERY</td><td><span class="status warn">Generic</span></td></tr>
+          <tr><td>Site Plan</td><td>COMMUNITY SITE PLAN</td><td><span class="status pass">OK</span></td></tr>
+          <tr><td>Downloads</td><td>Download Center</td><td><span class="status pass">OK</span></td></tr>
+        </tbody>
+      </table>
+
+      <h3>Internal Linking</h3>
+      <ul>
+        <li>Navigation provides links to all main pages</li>
+        <li>Footer duplicates navigation links (good)</li>
+        <li><strong>Missing:</strong> Cross-links between floorplan pages (e.g., "See also: The Frontier")</li>
+        <li><strong>Missing:</strong> Breadcrumb navigation</li>
+      </ul>
+    </section>
+
+    <!-- Schema -->
+    <section class="card" id="schema">
+      <div class="section-header">
+        <h2>Schema &amp; Structured Data</h2>
+        <span class="badge score-low">25 / 100</span>
+      </div>
+
+      <h3>Current Implementation</h3>
+      <table>
+        <thead><tr><th>Schema Type</th><th>Present</th><th>Valid</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td>WebSite</td><td><span class="status pass">Yes</span></td><td>Partial</td><td>Name and logo present</td></tr>
+          <tr><td>LocalBusiness</td><td><span class="status warn">Yes</span></td><td>Minimal</td><td>Missing key fields</td></tr>
+          <tr><td>FAQPage</td><td><span class="status fail">No</span></td><td>&mdash;</td><td>FAQ page has 12 Q&amp;As but no FAQPage schema</td></tr>
+          <tr><td>RealEstateListing</td><td><span class="status fail">No</span></td><td>&mdash;</td><td>Major missed opportunity</td></tr>
+          <tr><td>BreadcrumbList</td><td><span class="status fail">No</span></td><td>&mdash;</td><td>No breadcrumbs</td></tr>
+          <tr><td>Product</td><td><span class="status fail">No</span></td><td>&mdash;</td><td>Could be used for individual units</td></tr>
+          <tr><td>ImageGallery</td><td><span class="status fail">No</span></td><td>&mdash;</td><td>Gallery page has 33 images with no schema</td></tr>
+        </tbody>
+      </table>
+
+      <h3>LocalBusiness Schema Issues</h3>
+      <ul>
+        <li>Missing: opening hours, price range, geo coordinates</li>
+        <li>Missing: aggregate rating, reviews</li>
+        <li>Missing: telephone, email in schema</li>
+        <li>Missing: sameAs links to social profiles</li>
+      </ul>
+
+      <h3>Recommended Schema Additions</h3>
+      <ol>
+        <li><strong>FAQPage</strong> on /faqs &mdash; would enable FAQ rich results in Google</li>
+        <li><strong>RealEstateListing</strong> or <strong>Product</strong> for each floorplan unit</li>
+        <li><strong>BreadcrumbList</strong> site-wide</li>
+        <li><strong>ImageGallery</strong> on /gallery</li>
+        <li><strong>Organization</strong> with full details (phone, email, address, social)</li>
+        <li><strong>Place</strong> on /location with geo coordinates</li>
+      </ol>
+    </section>
+
+    <!-- Performance -->
+    <section class="card" id="performance">
+      <div class="section-header">
+        <h2>Performance</h2>
+        <span class="badge score-med">45 / 100</span>
+      </div>
+
+      <h3>Estimated Core Web Vitals</h3>
+      <div class="cwv-grid">
+        <div class="cwv-item warn">
+          <span class="cwv-metric">LCP</span>
+          <span class="cwv-value">~3-4s</span>
+          <span class="cwv-label">Needs Improvement</span>
+        </div>
+        <div class="cwv-item pass">
+          <span class="cwv-metric">INP</span>
+          <span class="cwv-value">~100-150ms</span>
+          <span class="cwv-label">Likely Good</span>
+        </div>
+        <div class="cwv-item warn">
+          <span class="cwv-metric">CLS</span>
+          <span class="cwv-value">~0.1-0.2</span>
+          <span class="cwv-label">Needs Improvement</span>
+        </div>
+      </div>
+
+      <h3>Resource Analysis</h3>
+      <ul>
+        <li><strong>20+ CSS/JS files</strong> loaded (Squarespace rollups)</li>
+        <li>Heavy reliance on Squarespace CDN for images</li>
+        <li>Facebook Pixel + Google Tag Manager adding third-party scripts</li>
+        <li>No evidence of lazy loading on gallery page (33 images)</li>
+      </ul>
+    </section>
+
+    <!-- Images -->
+    <section class="card" id="images">
+      <div class="section-header">
+        <h2>Images</h2>
+        <span class="badge score-critical">15 / 100</span>
+      </div>
+
+      <h3>Alt Text Audit</h3>
+      <table>
+        <thead><tr><th>Page</th><th>Images</th><th>With Alt</th><th>Missing</th></tr></thead>
+        <tbody>
+          <tr><td>Homepage</td><td>~4</td><td>0</td><td class="cell-fail">4</td></tr>
+          <tr><td>Mixed-Use Real Estate</td><td>~6</td><td>0</td><td class="cell-fail">6</td></tr>
+          <tr><td>The Hideout</td><td>~5</td><td>3</td><td class="cell-warn">2</td></tr>
+          <tr><td>The Frontier</td><td>~5</td><td>3</td><td class="cell-warn">2</td></tr>
+          <tr><td>The Mercantile</td><td>~5</td><td>3</td><td class="cell-warn">2</td></tr>
+          <tr><td>The Outlaw</td><td>~5</td><td>3</td><td class="cell-warn">2</td></tr>
+          <tr><td>Gallery</td><td>~33</td><td>0</td><td class="cell-fail">33</td></tr>
+          <tr><td>Location</td><td>~3</td><td>0</td><td class="cell-fail">3</td></tr>
+          <tr><td>Site Plan</td><td>~3</td><td>0</td><td class="cell-fail">3</td></tr>
+          <tr class="row-total"><td><strong>TOTAL</strong></td><td><strong>~69</strong></td><td><strong>12 (17%)</strong></td><td><strong>57 (83%)</strong></td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout critical">
+        <strong>83% of images are missing alt text.</strong> This is an accessibility violation (WCAG 2.1), a major missed SEO opportunity for image search, and particularly damaging on the Gallery page with 33 unoptimized images.
+      </div>
+    </section>
+
+    <!-- AI Search Readiness -->
+    <section class="card" id="ai-search">
+      <div class="section-header">
+        <h2>AI Search Readiness</h2>
+        <span class="badge score-critical">20 / 100</span>
+      </div>
+
+      <div class="callout critical">
+        <strong>robots.txt blocks major AI crawlers:</strong> ClaudeBot, GPTBot, Amazonbot, CCBot. The site is invisible to AI-powered search (ChatGPT, Perplexity, Claude, etc.)
+      </div>
+
+      <h3>Citability Assessment</h3>
+      <table>
+        <thead><tr><th>Factor</th><th>Rating</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td>Structured answers</td><td><span class="status warn">Moderate</span></td><td>FAQ page has good Q&amp;A format</td></tr>
+          <tr><td>Definitive statements</td><td><span class="status fail">Weak</span></td><td>Content is more marketing than informational</td></tr>
+          <tr><td>Data/statistics</td><td><span class="status warn">Moderate</span></td><td>Location page has demographic data</td></tr>
+          <tr><td>Unique insights</td><td><span class="status fail">Weak</span></td><td>Generic real estate development language</td></tr>
+          <tr><td>Entity clarity</td><td><span class="status fail">Weak</span></td><td>No clear entity definitions in schema</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Additional Issues -->
+    <section class="card" id="additional-issues">
+      <h2>Additional Issues Found</h2>
+
+      <div class="issues-grid">
+        <div class="issue-block">
+          <h3>Typos &amp; Errors</h3>
+          <ul>
+            <li><strong>Homepage title:</strong> "Herber City" should be "Heber City"</li>
+            <li><strong>FAQ page:</strong> "UNITES" should be "UNITS"</li>
+          </ul>
+        </div>
+        <div class="issue-block">
+          <h3>Social Media Links</h3>
+          <ul>
+            <li>Facebook &rarr; facebook.com/<strong>squarespace</strong></li>
+            <li>Twitter &rarr; twitter.com/<strong>squarespace</strong></li>
+            <li>Instagram &rarr; instagram.com/<strong>squarespace</strong></li>
+          </ul>
+          <p class="note">/// All three point to Squarespace, not MVC</p>
+        </div>
+        <div class="issue-block">
+          <h3>Phone Number Mismatch</h3>
+          <ul>
+            <li>Most pages: <strong>435.649.4757</strong></li>
+            <li>Privacy policy: <strong>435-659-4757</strong></li>
+          </ul>
+        </div>
+        <div class="issue-block">
+          <h3>Other Findings</h3>
+          <ul>
+            <li>Downloads page: "2023 Budget" is outdated</li>
+            <li>No OG tags on any page &mdash; poor social sharing</li>
+            <li>/flex-use-real-estate redirects to /mixed-use-real-estate</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scoring Breakdown -->
+    <section class="card" id="scoring">
+      <h2>Scoring Breakdown</h2>
+      <table>
+        <thead><tr><th>Category</th><th>Weight</th><th>Score</th><th>Weighted</th></tr></thead>
+        <tbody>
+          <tr><td>Technical SEO</td><td>25%</td><td>38</td><td>9.5</td></tr>
+          <tr><td>Content Quality</td><td>25%</td><td>30</td><td>7.5</td></tr>
+          <tr><td>On-Page SEO</td><td>20%</td><td>22</td><td>4.4</td></tr>
+          <tr><td>Schema / Structured Data</td><td>10%</td><td>25</td><td>2.5</td></tr>
+          <tr><td>Performance (CWV)</td><td>10%</td><td>45</td><td>4.5</td></tr>
+          <tr><td>Images</td><td>5%</td><td>15</td><td>0.75</td></tr>
+          <tr><td>AI Search Readiness</td><td>5%</td><td>20</td><td>1.0</td></tr>
+          <tr class="row-total"><td><strong>TOTAL</strong></td><td><strong>100%</strong></td><td><strong>&mdash;</strong></td><td><strong>34.15</strong></td></tr>
+        </tbody>
+      </table>
+
+      <div class="score-bars">
+        <div class="bar-row"><span class="bar-label">Technical SEO</span><div class="bar-track"><div class="bar-fill low" style="width:38%"></div></div><span class="bar-val">38</span></div>
+        <div class="bar-row"><span class="bar-label">Content</span><div class="bar-track"><div class="bar-fill low" style="width:30%"></div></div><span class="bar-val">30</span></div>
+        <div class="bar-row"><span class="bar-label">On-Page</span><div class="bar-track"><div class="bar-fill critical" style="width:22%"></div></div><span class="bar-val">22</span></div>
+        <div class="bar-row"><span class="bar-label">Schema</span><div class="bar-track"><div class="bar-fill low" style="width:25%"></div></div><span class="bar-val">25</span></div>
+        <div class="bar-row"><span class="bar-label">Performance</span><div class="bar-track"><div class="bar-fill med" style="width:45%"></div></div><span class="bar-val">45</span></div>
+        <div class="bar-row"><span class="bar-label">Images</span><div class="bar-track"><div class="bar-fill critical" style="width:15%"></div></div><span class="bar-val">15</span></div>
+        <div class="bar-row"><span class="bar-label">AI Search</span><div class="bar-track"><div class="bar-fill critical" style="width:20%"></div></div><span class="bar-val">20</span></div>
+      </div>
+    </section>
+
+    <!-- Competitive Disadvantages -->
+    <section class="card" id="competitive">
+      <h2>Competitive Disadvantages</h2>
+      <p style="padding-top:1rem; padding-bottom:0.5rem;">For a mixed-use real estate development in the competitive Heber City / Park City corridor market, this site has significant SEO gaps:</p>
+      <ol class="issue-list critical">
+        <li><strong>Will not rank</strong> for high-intent searches like "mixed use property Heber City" due to missing meta descriptions and thin content</li>
+        <li><strong>Invisible to AI search</strong> &mdash; blocked all AI crawlers</li>
+        <li><strong>No rich results</strong> in Google &mdash; missing FAQ schema, product schema, review schema</li>
+        <li><strong>Poor social sharing</strong> &mdash; no OG tags + wrong social links</li>
+        <li><strong>Accessibility concerns</strong> &mdash; 83% of images missing alt text could trigger ADA compliance issues</li>
+      </ol>
+    </section>
+
+    <!-- CTA -->
+    <section class="card cta-card">
+      <h2>Next Steps</h2>
+      <p>View the prioritized action plan with specific recommendations and estimated effort for each fix.</p>
+      <a href="action-plan.html" class="btn">View Action Plan &rarr;&rarr;&rarr;</a>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <img src="MVC Brand Guide/Logo/PNG/MVC-Logo_web.png" alt="Mountain View Commons" class="footer-logo">
+      <p>MVC-SEO-001 /// Audit Report /// 2026.03.25</p>
+    </div>
+  </footer>
+</body>
+</html>
